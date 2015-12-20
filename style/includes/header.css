@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+
+.item-pic{
+	width:304px;
+	height:228px;
+	border-style: solid;
+    border-width: medium;
+	border-color: #04B404;
+}
+
+.item-label{
+	text-align: center;
+	font-size: 200%;
+}
+.item-hr{
+  border: 2;
+  width: 80%;
+  color: #ffffff;
+}
+
+.header-navigation{
+	width: 60%;
+}
+.navigation-item{
+	background-color: #2EFE2E;
+	text-align: center;
+}
+.navigation-item:hover{
+	background-color: #81F781;
+}
