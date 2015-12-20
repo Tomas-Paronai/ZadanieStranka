@@ -1,31 +1,30 @@
 @CHARSET "UTF-8";
 
-html, body {
+html{
     height: 100%;
-    background:#BEF781;
+    background:#0AB2B5;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-html {
     display: table;
     margin: auto;
 }
+
+body{
+	background: #047F8F;
+}
+
 body {
     display: table-cell;
     vertical-align: top-middle;
 }
 
-#page{
-	
-}
-
-#header-main, #body-main, #footer-main{
-	border-collapse: collapse;
-    border-style: solid;
-    border-width: medium;
-    border-color: #2EFE2E;
+#body-main{
+	border: 0;
+	border-style: solid;
+	border-top-width: 2px;
+	border-left-width: 2px;
+	border-color: #0C3C50;
 }
 
 #header-main{
-	background: #ffffff;
+	background: #E9E7EC;
 }

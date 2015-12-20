@@ -30,10 +30,17 @@
 			?>
 			
 		</tr>
-		<tr class="header-navigation">
-			<td class="navigation-item">Home</td>
-			<td class="navigation-item">Products</td>
-			<td class="navigation-item">Komunity</td>
+		<tr>
+			<td colspan="3" align="center">
+				<table class="header-navigation" cellspacing="0" cellpadding="0">	
+					<tr>
+						<td class="navigation-item">Home</td>
+						<td class="navigation-item">Products</td>
+						<td class="navigation-item">Komunity</td>
+					</tr>
+				</table>
+			</td>
+			
 		</tr>
 	</table>
 </div>
