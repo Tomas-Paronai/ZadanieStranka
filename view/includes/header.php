@@ -3,7 +3,7 @@
 ?>
 
 <div class="header-galery">
-	<table class="galery-table">
+	<table class="galery-table" cellspacing="0" cellpadding="0">
 		<tr>
 			<?php
 				$max = 4;

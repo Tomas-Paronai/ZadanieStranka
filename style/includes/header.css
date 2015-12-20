@@ -1,6 +1,5 @@
 @CHARSET "UTF-8";
 
-
 .item-pic{
 	width:304px;
 	height:228px;
@@ -20,12 +19,15 @@
 }
 
 .header-navigation{
-	width: 60%;
+	width: 60%;		
+	border-collapse: collapse;
 }
+
 .navigation-item{
 	background-color: #2EFE2E;
-	text-align: center;
+	text-align: center;	
 }
+
 .navigation-item:hover{
 	background-color: #81F781;
 }
