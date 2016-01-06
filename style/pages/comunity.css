@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+span{
+	color: red;
+	font-weight: normal;
+}
+
+#login-form, #registration{
+	list-style-type: none;
+}
+
+#login-error{
+	color: red;
+}
+
+#registration-link{
+	text-decoration: none;
+	color: #CDB380;
+}
+
+.registration-pointer{
+	text-align: center;
+	color: white;
+}
+
+.quote-item{
+	margin-top: 10px;
+	color: white;
+}
+
+.registration-item{
+	margin-top: 15px;
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+.registration-header{
+	margin-left: 70px;
+	color: white;
+}

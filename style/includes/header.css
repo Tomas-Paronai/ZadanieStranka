@@ -1,31 +1,61 @@
 @CHARSET "UTF-8";
 
+.header-galery{
+	padding-top: 10px;
+}
+
 .item-pic{
 	width:100%;
 	height:228px;
 	border-style: solid;
     border-width: 3px;
-	border-color: #047F8F;
+	border-color: #031634;
 }
 
 .item-label{
 	text-align: center;
-	font-size: 200%;
+	font-size: 130%;
 }
 .item-hr{
   border: 2;
   width: 80%;
-  border-color: #0C3C50;
+  border-color: #031634;
 }
 
 .header-navigation{
 	width:60%
 }
 
-.navigation-item{
+.navigation-item, .category-item{	
 	padding-left: 10px;
 	text-align: center;	
-	background-color: #047f8f;
+	background-color: #036564;
+}
+
+.navigation-item{
+	border-top: 2px solid #031634;
+}
+
+.navigation-item:first-child{
+	border-left: 2px solid #031634;
+	border-right: 1px solid #031634;
+}
+
+.navigation-item:last-child{
+	border-right: 2px solid #031634;
+	border-left: 1px solid #031634;
+}
+
+.navigation-item:hover{
+	background-color: #047e7d;
+}
+
+.link{
+	text-decoration: none;
 	font-weight: 700;
     color: white;
+}
+
+.link:visited{
+	text-decoration: none;
 }

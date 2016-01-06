@@ -4,7 +4,7 @@
 
 <div class="header-galery">
 	<table class="galery-table" cellspacing="0" cellpadding="0">
-		<tr>
+		<tr class="new-items">
 			<?php
 				$max = 4;
 				$tempProduct = Product::FirstItem();
@@ -17,8 +17,9 @@
 					
 					$product = Product::ExistingItem($allIds[$i]['productid']);
 					$name = $product->getData('name');
+					$title = $product->getData('title');
 					$price = $product->getData('price');
-					$imgPath = "lib/products/img/".$name."/1.jpg";
+					$imgPath = "lib/products/img/".$title."/1.jpg";
 										
 					echo '<td class="galery-item">';
 					echo '<div class="item-img"><img class="item-pic" alt="product.jpg" src="'.$imgPath.'"> </div>';
@@ -31,12 +32,12 @@
 			
 		</tr>
 		<tr>
-			<td colspan="3" align="center">
+			<td colspan="4" align="center">
 				<table class="header-navigation" cellspacing="0" cellpadding="0">	
-					<tr>
-						<td class="navigation-item">Home</td>
-						<td class="navigation-item">Products</td>
-						<td class="navigation-item">Komunity</td>
+					<tr class="header-nav-buttons">
+						<td class="navigation-item"><a class="link" href="?page=home">Home</a></td>
+						<td class="navigation-item"><a class="link" href="?page=products">Products</a></td>
+						<td class="navigation-item"><a class="link" href="?page=comunity">Comunity</a></td>
 					</tr>
 				</table>
 			</td>
