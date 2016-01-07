@@ -1,5 +1,10 @@
 <?php
 
+if(isset($_GET['comm'])){
+	if($_GET['comm'] == 'logoff'){
+		unset($_SESSION['login']);
+	}
+}
 	
 ?>
 
@@ -8,12 +13,28 @@
 <div><h1 align="center" >Evelynpa comunity</h1></div>
 
 <?php
+	include_once ('API/UserHandler.php');
+
 	if(isset($_GET['sub'])){
 		$pagePath = 'view/pages/sub/'.$_GET['sub'].'.php';
 		include_once ($pagePath);
 	}
 	else{
-		include_once ('view/pages/sub/login.php');
+		if(isset($_SESSION['login'])){
+			$login = $_SESSION['login'];
+			if(is_numeric($login)){
+				$user = User::Exist($login);
+				echo '<div class="welcome-message">Welcome '.$user->getData('name').' !</div>';
+				echo '<a class="welcome-message" href="?page=comunity&comm=logoff">Log off</a>';
+			}
+			else{
+				echo '<div class="welcome-message">'.$login.'</div>';
+				include_once ('view/pages/sub/login.php');
+			}
+		}
+		else{
+			include_once ('view/pages/sub/login.php');
+		}
 	}
 ?>
 

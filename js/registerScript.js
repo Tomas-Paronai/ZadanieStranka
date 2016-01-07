@@ -4,13 +4,20 @@
 
 function beforeRegPost(){
 	
+	var nick = document.getElementById('nick').value;
 	var name = document.getElementById('name').value;
 	var surname = document.getElementById('surname').value;
 	var email = document.getElementById('email').value;
 	var passwords = document.getElementsByName('password');
 	var errors = 0;
 	
-	
+	if(!/^[a-zA-Z0-9]{4,}[0-9]*$/.test(nick)){
+		errors++;
+		document.getElementById('nick-err').innerHTML = '*Nickname must have atleast 4 letters or numbers!';
+	}
+	else{
+		document.getElementById('nick-err').innerHTML = '*OK';
+	}
 	
 	if(!/^[a-zA-Z]{2,}$/.test(name)){
 		errors++;
