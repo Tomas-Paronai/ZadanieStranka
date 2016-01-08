@@ -1,6 +1,6 @@
 <?php
 	
-include_once ('API/DataHandler.php');
+include_once ('API/CategoryHandler.php');
 include_once ('API/ProductHandler.php');
 	
 ?>
@@ -11,10 +11,7 @@ include_once ('API/ProductHandler.php');
 	<table id="categories" cellspacing="0" cellpadding="0">
 		<tr>
 			<?php			
-			$HandlerDB = new DBHandler();
-			$query = 'SELECT * FROM categories';
-			$HandlerDB->query($query);
-			$categories = $HandlerDB->resultSet();			
+			$categories = Category::CatArray();			
 			for($i=0;$i<count($categories);$i++){
 				$name = $categories[$i]['categoryname'];
 				echo '<td class="category-item"><a class="link" href="?page=products&cat='.$name.'">'.$name.'</a></td>';
@@ -34,10 +31,8 @@ include_once ('API/ProductHandler.php');
 		
 		for($i=0;$i<count($allIds);$i++){
 			$product = Product::ExistingItem($allIds[$i]['productid']);
-			$title = $product->getData('title');
-			$imagePath = 'lib/products/img/'.$title.'/1.jpg';
+			$imagePath = 'lib/products/img/'.$product->getId().'/1.jpg';
 			
-			$discription = 'DISCRIPTION IN PROGRESS';
 			
 			echo '<li class="single-cell">';
 				echo '<div class="container-product">';
@@ -45,7 +40,7 @@ include_once ('API/ProductHandler.php');
 					echo '<div class="information-holder">';
 						echo '<ul class="product-detail-list">';
 						echo '<li><h1 class="product-title">'.$product->getData('name').'</h1></li>';
-						echo '<li><div class="short-discription">'.$discription.'</div></li>';
+						echo '<li><div class="short-discription">'.$product->getData('discription').'</div></li>';
 						echo '<li><div class="price">'.$product->getData('price').'</div>';
 						echo '</ul>';
 					echo '</div>';

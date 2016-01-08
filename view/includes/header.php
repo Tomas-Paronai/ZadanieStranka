@@ -15,13 +15,11 @@
 				}
 				
 				$allIds = $tempProduct->getProductsId();
-				for($i=0;$i<$max;$i++){
-					
+				for($i=0;$i<$max;$i++){					
 					$product = Product::ExistingItem($allIds[$i]['productid']);
 					$name = $product->getData('name');
-					$title = $product->getData('title');
 					$price = $product->getData('price');
-					$imgPath = "lib/products/img/".$title."/1.jpg";
+					$imgPath = "lib/products/img/".$product->getId()."/1.jpg";
 										
 					echo '<td class="galery-item">';
 					echo '<div class="item-img"><img class="item-pic" alt="product.jpg" src="'.$imgPath.'"> </div>';

@@ -8,10 +8,7 @@ include ("config.php");
 <html>
 <head>	
 	<link rel="stylesheet" type="text/css" href="style/index.css">
-	<link rel="stylesheet" type="text/css" href="style/pages/body.css">	
-		
-	
-	
+	<link rel="stylesheet" type="text/css" href="style/pages/body.css">		
 </head>
 <body>
 <div id="page">
