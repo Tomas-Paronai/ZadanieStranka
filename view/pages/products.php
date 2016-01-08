@@ -5,6 +5,8 @@ include_once ('API/ProductHandler.php');
 	
 ?>
 
+<link rel="stylesheet" type="text/css" href="style/pages/products.css">
+
 <div class="products-navigation">
 	<table id="categories" cellspacing="0" cellpadding="0">
 		<tr>

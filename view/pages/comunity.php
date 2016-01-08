@@ -8,7 +8,7 @@ if(isset($_GET['comm'])){
 	
 ?>
 
-
+<link rel="stylesheet" type="text/css" href="style/pages/comunity.css">
 
 <div><h1 align="center" >Evelynpa comunity</h1></div>
 
@@ -26,6 +26,9 @@ if(isset($_GET['comm'])){
 				$user = User::Exist($login);
 				echo '<div class="welcome-message">Welcome '.$user->getData('name').' !</div>';
 				echo '<a class="welcome-message" href="?page=comunity&comm=logoff">Log off</a>';
+				if($user->getData('name') == 'admin'){
+					echo '<a class="welcome-message" href="?page=import">Import</a>';
+				}
 			}
 			else{
 				echo '<div class="welcome-message">'.$login.'</div>';

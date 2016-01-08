@@ -2,6 +2,8 @@
 	include_once ('API/ProductHandler.php');
 ?>
 
+<link rel="stylesheet" type="text/css" href="style/includes/header.css">
+
 <div class="header-galery">
 	<table class="galery-table" cellspacing="0" cellpadding="0">
 		<tr class="new-items">

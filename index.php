@@ -6,15 +6,12 @@ include ("config.php");
 
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style/includes/header.css">
-	<link rel="stylesheet" type="text/css" href="style/pages/body.css">
-	<link rel="stylesheet" type="text/css" href="style/pages/products.css">
-	<link rel="stylesheet" type="text/css" href="style/pages/comunity.css">
+<head>	
 	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="style/pages/body.css">	
+		
 	
-	<script src="js/loginScript.js"></script>
-	<script src="js/registerScript.js"></script>
+	
 </head>
 <body>
 <div id="page">

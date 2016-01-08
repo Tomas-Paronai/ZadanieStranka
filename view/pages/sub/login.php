@@ -1,6 +1,7 @@
 <?php 
 ?>
 
+<script src="js/loginScript.js"></script>
 <div class="registration-pointer">If not registered, you can register <a class="registration-link" href="?page=comunity&sub=registration">here</a>.</div>
 
 <form id="login" method="POST" onSubmit="return beforeSubmit()" action="API/Login.php">

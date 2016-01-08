@@ -1,6 +1,8 @@
 <?php
 ?>
 
+<script src="js/registerScript.js"></script>
+
 <div><h2 class="registration-header" >Registration</h2></div>
 <form  method="POST" onSubmit="return beforeRegPost()" action="API/Register.php">
 	<ul id="registration">
